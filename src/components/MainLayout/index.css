@@ -1,3 +1,7 @@
-.border-news {
-    border-style: solid;
+.border-spor {
+    border: 1px solid rgb(251 146 60);
+}
+
+.border-gundem {
+    border: 1px solid rgb(251 146 60);
 }
