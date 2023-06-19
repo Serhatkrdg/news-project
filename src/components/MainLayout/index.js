@@ -9,11 +9,11 @@ export const MainLayout = ({children, focusSpor, setFocusSpor, focusGundem, setF
       <div className=' flex justify-evenly'>
         <div className=' w-56'>
           
-          <button type='button' className=' cursor-pointer border-solid border-2 border-orange-400 h-full w-full text-orange-400' onClick={() => {setFocusSpor(true); setFocusGundem(false)}}><img src={sportIco}></img>Spor Haberleri</button>
+          <button type='button' className={` cursor-pointer text-orange-400 h-full w-full ${focusSpor ? 'border-news' : ''} `} onClick={() => {setFocusSpor(true); setFocusGundem(false)}}><img src={sportIco}></img>Spor Haberleri</button>
         </div>
         <div className=' w-36'>
           
-          <button type='button' className=' cursor-pointer border-solid border-2 border-orange-400 h-full w-full text-orange-400' onClick={() => {setFocusGundem(true); setFocusSpor(false)}}><img src={gundemIco}></img>Gundem Haberleri</button>
+          <button type='button' className={` cursor-pointer text-orange-400 ${focusGundem ? 'border-news' : ''} `} text-orange-400 onClick={() => {setFocusGundem(true); setFocusSpor(false)}}><img src={gundemIco}></img>Gundem Haberleri</button>
         </div>
         </div>
         {children}
