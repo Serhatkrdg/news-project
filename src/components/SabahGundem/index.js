@@ -31,7 +31,7 @@ return(
             {sabahGundemNews.map((e) => {
             return (
             <div className=' flex flex-col'>
-            <div className=' text-blue-300'>{e.title}</div>
+            <div className=' text-blue-400'>{e.title}</div>
             <div className=' text-sky-200'>{e.description}</div>
             <br />
             <hr  className='hr-news'/>
